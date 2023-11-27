@@ -3,26 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-    body {
-      margin: 0;
-      padding: 0;
-	 background-image: url('/images/minecraftBackground.jpg');
-      background-size: cover;
-      background-attachment: fixed;
-    }
-    .content {
-      position: relative;
-      z-index: 1;
-      padding: 20px;
-      color: #fff; /* Set text color to be visible against the background */
-    }
-  </style>
 </head>
 <body>
-	<div class="content">
-		<h1>Simple Shell - Holberton School</h1>
-	</div>
+	<h1>Simple Shell - Holberton School</h1>
 	<p>This repository contains the source code for a simple shell project developed at Holberton School.</p>
 	<h2>Authors</h2>
 	<ul>
