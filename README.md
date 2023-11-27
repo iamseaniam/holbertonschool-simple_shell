@@ -7,11 +7,10 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('https://www.shutterstock.com/image-photo/system-log-on-black-screen-closeup-2213469371'); /* Replace with your image URL */
+      background-image: url('"C:\Users\seana\Downloads\minecraftBackground.jpg"'); /* Replace with your image URL */
       background-size: cover;
       background-attachment: fixed;
     }
-
     .content {
       position: relative;
       z-index: 1;
