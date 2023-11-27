@@ -7,7 +7,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('"C:\Users\seana\Downloads\minecraftBackground.jpg"'); /* Replace with your image URL */
+	 background-image: url('/images/minecraftBackground.jpg');
       background-size: cover;
       background-attachment: fixed;
     }
