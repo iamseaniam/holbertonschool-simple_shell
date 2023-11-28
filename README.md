@@ -30,7 +30,5 @@
 	<p>Once the shell is running, you can enter commands in the prompt and press Enter to execute them.</p>
 	<h2>Contributing</h2>
 	<p>Feel free to contribute to this project by submitting pull requests. For major changes, please open an issue first to discuss the proposed changes.</p>
-	<h2>License</h2>
-	<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 </body>
 </html>
