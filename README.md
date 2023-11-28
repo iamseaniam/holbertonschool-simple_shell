@@ -9,7 +9,7 @@
 	<p>This repository contains the source code for a simple shell project developed at Holberton School.</p>
 	<h2>Authors</h2>
 	<ul>
-		<li>Nolan Heald</li>
+		<li>Nolan H</li>
 		<li>Sean Montgomery</li>
 	</ul>
 	<h2>Clone Repository</h2>
