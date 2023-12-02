@@ -1,11 +1,16 @@
 #include "main.h"
-
+/**
+ * main - a simple shell that can run commands with their full path
+ * 
+ * Return: 0 if successful, 1 if fail
+*/
 int main(void)
 {
 	char *buffer;
 	size_t buffsize = 100;
 	ssize_t line_size;
-	int id = fork();
+	char *argv[2];
+	int status;
 
 	buffer = (char *)malloc(buffsize * sizeof(char));
 	if (buffer == NULL)
@@ -15,17 +20,20 @@ int main(void)
 	}
 	while (1)
 	{
-		printf("Enter YOUR command ");
-		line_size = getline(&buffer, &buffsize, stdin);
-		fork();
-		if (id == 0)
-		{
-			if (line_size == -1)
-				break;
-			if (strcmp(buffer, "exit\n") == 0)
-				break;
-		}
-    }
+		printf("Enter Command");
+		line_size = get_line(buffer, &buffsize);
+		if (line_size == -1)
+			break;
+		parse_line(buffer, argv);
+		if (check_exit(argv))
+			break;
+		if(check_env(argv))
+			continue;
+		if (check_executable(argv))
+			continue;
+		
+		execute_command(argv, &status);
+	}
 	free(buffer);
-	return 0;
+	return (0);
 }
