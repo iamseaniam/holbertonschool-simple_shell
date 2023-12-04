@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - a simple shell that can run commands with their full path
- * 
+ *
  * Return: 0 if successful, 1 if fail
 */
 int main(void)
@@ -20,18 +20,18 @@ int main(void)
 	}
 	while (1)
 	{
-		printf("Enter Command");
+		printf("$ ");
 		line_size = get_line(buffer, &buffsize);
 		if (line_size == -1)
 			break;
 		parse_line(buffer, argv);
 		if (check_exit(argv))
 			break;
-		if(check_env(argv))
+		if (check_env(argv))
 			continue;
 		if (check_executable(argv))
 			continue;
-		
+
 		execute_command(argv, &status);
 	}
 	free(buffer);

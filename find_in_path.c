@@ -2,7 +2,7 @@
 /**
  * find_in_path - Search for a command in the PATH
  * @cmd: The command to search for
- * 
+ *
  * Return: The full path of the command if found, NULL otherwise
 */
 char *find_in_path(char *cmd)
