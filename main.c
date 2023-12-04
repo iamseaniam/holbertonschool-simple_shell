@@ -32,7 +32,7 @@ int main(void)
 			continue;
 
 		execute_command(argv, &status);
-		printf("$ ")
+		printf("$ ");
 	}
 	free(buffer);
 	return (0);
