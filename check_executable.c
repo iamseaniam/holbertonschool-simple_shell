@@ -2,7 +2,7 @@
 /**
  * check_executable = Check if the command is an executable
  * @argv: The command and its arguments
- * 
+ *
  * Return: 1 if the command is not an executable, 0 otherwise
 */
 int check_executable(char *argv[])
