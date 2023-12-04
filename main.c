@@ -18,6 +18,7 @@ int main(void)
 		perror("unable to allocate buffer");
 		exit(1);
 	}
+	printf("$ ");
 	while (1)
 	{
 		line_size = get_line(buffer, &buffsize);
@@ -32,7 +33,6 @@ int main(void)
 			continue;
 
 		execute_command(argv, &status);
-		printf("$ ");
 	}
 	free(buffer);
 	return (0);
