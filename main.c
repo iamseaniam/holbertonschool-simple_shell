@@ -20,7 +20,6 @@ int main(void)
 	}
 	while (1)
 	{
-		printf("$ ");
 		line_size = get_line(buffer, &buffsize);
 		if (line_size == -1)
 			break;
@@ -33,6 +32,7 @@ int main(void)
 			continue;
 
 		execute_command(argv, &status);
+		printf("$ ")
 	}
 	free(buffer);
 	return (0);
