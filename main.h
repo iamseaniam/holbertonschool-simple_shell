@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/wait.h>
+#include <errno.h>
 
 void parse_line(char *buffer, char *argv[]);
 void execute_command(char *argv[], int *status);
