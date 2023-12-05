@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <string.h>
+#include <unistd.h>
 #include "main.h"
 /**
  * main - a simple shell that can run commands with their full path
