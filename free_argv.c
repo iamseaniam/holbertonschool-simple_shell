@@ -5,8 +5,8 @@
 */
 void free_argv(char *argv[])
 {
-	int i = 0;
+	int i;
 
-	for (i; argv [i] != NULL; i++)
+	for (i = 0; argv [i] != NULL; i++)
 		free(argv[i]);
 }
