@@ -11,7 +11,7 @@ ssize_t get_line(char *buffer, size_t *buffsize)
 	ssize_t line_size = getline(&buffer, buffsize, stdin);
 
 	if (line_size != -1)
-		buffer[line_size -1] = '\0';
+		buffer[line_size - 1] = '\0';
 
 	return (line_size);
 }
