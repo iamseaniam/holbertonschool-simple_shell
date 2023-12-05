@@ -16,6 +16,7 @@ int main(void)
 	if (buffer == NULL)
 	{
 		perror("unable to allocate buffer");
+		free(buffer);
 		exit(1);
 	}
 	while (1)
@@ -25,12 +26,15 @@ int main(void)
 			break;
 		parse_line(buffer, argv);
 		if (check_exit(argv))
+		{
+			free(buffer);
+			free_argv(argv);
 			break;
+		}
 		if (check_env(argv))
 			continue;
 		if (check_executable(argv))
 			continue;
-
 		execute_command(argv, &status);
 	}
 	free(buffer);
