@@ -18,7 +18,6 @@ int main(void)
 		perror("unable to allocate buffer");
 		exit(1);
 	}
-	printf("$ ");
 	while (1)
 	{
 		line_size = get_line(buffer, &buffsize);
