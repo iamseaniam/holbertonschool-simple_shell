@@ -17,4 +17,5 @@ int check_executable(char *argv[]);
 void print_env(void);
 int check_env(char *argv[]);
 extern char **environ;
+void free_argv(char *argv[]);
 #endif
