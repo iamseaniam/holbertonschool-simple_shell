@@ -11,7 +11,7 @@ void execute_command(char *argv[], int *status)
 	if (id == 0)
 	{
 		execve(argv[0], argv, NULL);
-		exit(errno); /* Exit with the error number if execve fails*/
+		exit(*status); /* Exit with the status of the child process if execve fails*/
 	}
 	else
 	{
