@@ -8,6 +8,10 @@
 char *find_in_path(char *cmd)
 {
 	char *path = getenv("PATH");
+	if (path == NULL)
+	{
+		return (NULL);
+	}
 	char *path_copy = strdup(path);
 	char *dir = strtok(path_copy, ":");
 	char *cmd_path = malloc(strlen(cmd) + strlen(path) + 2);

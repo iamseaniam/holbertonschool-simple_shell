@@ -24,6 +24,7 @@ int main(void)
 		line_size = get_line(buffer, &buffsize);
 		if (line_size == -1)
 			break;
+
 		parse_line(buffer, argv);
 		if (check_exit(argv))
 		{
@@ -31,11 +32,14 @@ int main(void)
 			free_argv(argv);
 			break;
 		}
+
 		if (check_env(argv))
 			continue;
-		if (check_executable(argv))
-			continue;
-		execute_command(argv, &status);
+
+		if (check_executable(argv) != 127)
+		{
+			execute_command(argv, &status);
+		}
 	}
 	free(buffer);
 	return (0);
