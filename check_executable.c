@@ -12,8 +12,8 @@ int check_executable(char *argv[])
 		argv[0] = find_in_path(argv[0]);
 		if (argv[0] == NULL)
 		{
-			perror("Shell");
-			return (1);
+			fprintf(stderr, "./hsh: 1: %s: not found\n", argv[0]);
+			return (127);
 		}
 	}
 	return (0);
