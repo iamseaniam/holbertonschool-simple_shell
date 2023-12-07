@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/wait.h>
+#include <errno.h>
 
 void parse_line(char *buffer, char *argv[]);
 void execute_command(char *argv[], int *status);
@@ -16,4 +17,5 @@ int check_executable(char *argv[]);
 void print_env(void);
 int check_env(char *argv[]);
 extern char **environ;
+void free_argv(char *argv[]);
 #endif

@@ -28,6 +28,8 @@
 	</pre>
 	<h2>Usage</h2>
 	<p>Once the shell is running, you can enter commands in the prompt and press Enter to execute them.</p>
+	<h2>Flowchart</h2>
+	<p>*link to flowchart*<p>
 	<h2>Contributing</h2>
 	<p>Feel free to contribute to this project by submitting pull requests. For major changes, please open an issue first to discuss the proposed changes.</p>
 </body>

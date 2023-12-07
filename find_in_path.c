@@ -12,6 +12,11 @@ char *find_in_path(char *cmd)
 	char *dir = strtok(path_copy, ":");
 	char *cmd_path = malloc(strlen(cmd) + strlen(path) + 2);
 
+	if (path == NULL)
+	{
+		return (NULL);
+	}
+
 	while (dir != NULL)
 	{
 		sprintf(cmd_path, "%s/%s", dir, cmd);

@@ -11,10 +11,14 @@ void execute_command(char *argv[], int *status)
 	if (id == 0)
 	{
 		execve(argv[0], argv, NULL);
-		exit(0);
+		exit(*status); /* Exit with the status of the child process if execve fails*/
 	}
 	else
 	{
-		wait(status);
+		wait(status); /*Wait for the child process to finish*/
+		if (WIFEXITED(*status)) /*Check if the child process terminated normally*/
+		{
+			*status = WEXITSTATUS(*status); /*Get the exit status of the child process*/
+		}
 	}
 }
