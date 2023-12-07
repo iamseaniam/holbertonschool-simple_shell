@@ -18,7 +18,7 @@ void execute_command(char *argv[], int *status)
 		wait(status); /*Wait for the child process to finish*/
 		if (WIFEXITED(*status)) /*Check if the child process terminated normally*/
 		{
-			*status = WEXITSTATUS(*status);/*Get the exit status of the child process*/
+			*status = WEXITSTATUS(*status); /*Get the exit status of the child process*/
 		}
 	}
 }
