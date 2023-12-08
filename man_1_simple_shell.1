@@ -1,24 +1,55 @@
 .TH man 1 "_simple-shell man page"
 .SH NAME
-_simple-shell
+simple-shell
 .SH SYNOPSIS
-.B it is a thompson shell but simpler.
+.B command [OPTION]... [FILE]...
 .br
-.B int _simple-shell(placeholder)
 .SH DESCRIPTION
 .PP
-_simple-shell is a simple shell.
+hsh is a simple shell written in C. It takes command inputs from the user, verifies if the input is correct, and passes them to the machine to execute through the kernel.
+.br
+.SH OPTIONS
 .PP
-The shell can handle the following commands
+N/A
 .br
-chmod -
+.SH COMMANDS
+.PP
+The shell can handle the following commands.
 .br
-pwd -
+cat - concatenates and prints file contents.
 .br
-cat -
+cd - changes directory.
 .br
-cd -
+ctrl + c - the line discipline of your terminal sends SIGINT to processes in the foreground process group.
 .br
-ls - 
+ctrl + d - tells the bash session to end.
+.br
+echo - displays a line of text
+.br
+ls - lists contents of working directory. [-l, -a, -s]
+.br
+man - gives a manual entry for specified command or function.
+.br
+mkdir - makes a directory of specified name at current or specified location.
+.br
+mv - renames or moves a file to specified location.
+.br
+pwd - prints working directory.
+.br
+rm - removes files or directories.
+.br
+rmdir - removes a directory of specified name at current or specified location.
+.br
+touch - makes a file of specified name
+.br
 .SH "RETURN VALUE"
-_simple_shell returns the result of the command you provide it.
+.B hsh returns the result of the command you provide it.
+.br
+.SH BUGS
+.PP
+Errors with whitespaces in command line.
+.br
+.SH HISTORY
+.PP
+Version 1.0.0
+.br
