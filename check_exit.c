@@ -11,7 +11,7 @@ int check_exit(char *argv[])
 	if (argv == NULL || argv[0] == NULL)
 	{
 		/* handle the error or return an apporiate value*/
-		return (0) /*assuming "exit" is not present if theres an issue*/
+		return (0); /*assuming "exit" is not present if theres an issue*/
 	}
 	return (strcmp(argv[0], "exit") == 0);
 }
