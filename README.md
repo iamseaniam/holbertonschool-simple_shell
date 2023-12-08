@@ -13,7 +13,7 @@
 		<li>Nolan H</li>
 	</ul>
 	<h2>Flowchart</h2>
-	<p>![image](https://github.com/iamseaniam/holbertonschool-simple_shell/assets/144157130/f855d3bd-0674-4892-91bc-213fcb044409)</p>
+	<p>![image](https://github.com/iamseaniam/holbertonschool-simple_shell/assets/144157130/74ea85e1-cc5b-4fbe-84b2-afcf7b729512)</p>
 	<h2>Clone Repository</h2>
 	<p>To clone this repository, use the following command:</p>
 	<pre>
