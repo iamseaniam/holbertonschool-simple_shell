@@ -18,12 +18,12 @@ int main(void)
 		free(buffer);
 		exit(1);
 	}
+	printf("$ ");
 	while (1)
 	{
 		line_size = get_line(buffer, &buffsize);
 		if (line_size == -1)
 			break;
-
 		parse_line(buffer, argv);
 		if (check_exit(argv))
 		{
@@ -31,10 +31,8 @@ int main(void)
 			free_argv(argv);
 			break;
 		}
-
 		if (check_env(argv))
 			continue;
-
 		if (check_executable(argv) != 127)
 		{
 			execute_command(argv, &status);
